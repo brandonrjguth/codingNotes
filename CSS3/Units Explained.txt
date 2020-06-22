@@ -1,0 +1,21 @@
+RELATIVE UNITS
+
+%               = Percentage prelative to the same propert of the parent element.
+
+em              = Relative to the font size of the element.
+
+rem             = Relative to the font size of the root element.
+
+ex              = Relative to the x-height of the font.
+
+
+ABSOLUTE UNITS
+
+cm, mm, in      = Self explanatory, used in print.
+px              = pixels. duh.
+vw, vh          = % of viewport, but you don't get to use these because browsers are stupid and it's too
+                 unreliable to be used commercially.
+
+
+There are more but none of them matter and by the time you ever need to use them you'll have forgotten 
+anyways and will have to look to google anyways.

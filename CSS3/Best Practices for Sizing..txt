@@ -1,0 +1,21 @@
+For Web.
+
+It's best to use "rem" for the majority of sizing cases. 
+"rem" inherits it's size relative to the size of the root element. 
+In our case this is "<html>".
+
+Setting the font-size of the html element to 10px and using rem sizing for divs, padding, and margins
+is best practice. 
+
+HOWEVER, some browser's default font-size may be higher, and overwriting the default font-size in
+that scenario is going to provide a bad user-experience. Like-wise, those who have manually changed
+their own font-size for accessibility reasons will also be affected negatively.
+
+The solution is to use a font-size for the HTML element set to 62.5%, as this will result in a value 
+equal to 10px while preserving font-size and responsive design for users with higher default "px".
+
+
+VH, and VW may be useful and tempting to use but are not recommended now to do some weird behaviour.
+
+Certain media queries may benefit from "em" spacing based on their parent element, because of some issues
+that arise occasionally using "rem" sizing on safari.
